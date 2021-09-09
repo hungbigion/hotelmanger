@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E7068EB7-5EAD-4136-9221-1785C83DF2D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLKSSML</RootNamespace>
+    <AssemblyName>QLKSSML</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CACC.cs" />
+    <Compile Include="CDV.cs" />
+    <Compile Include="CHDservice.cs" />
+    <Compile Include="CKHinfo.cs" />
+    <Compile Include="ClassQLP.cs" />
+    <Compile Include="Clogin.cs" />
+    <Compile Include="CLPhong.cs" />
+    <Compile Include="Clthuephong.cs" />
+    <Compile Include="CQLNV.cs" />
+    <Compile Include="Ctraphong.cs" />
+    <Compile Include="DataSetinHD.cs">
+      <DependentUpon>DataSetinHD.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetinHD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetinHD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fdangkytk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fdangkytk.Designer.cs">
+      <DependentUpon>Fdangkytk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDangN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDangN.Designer.cs">
+      <DependentUpon>FDangN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinHD.Designer.cs">
+      <DependentUpon>FinHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQHDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQHDV.Designer.cs">
+      <DependentUpon>FQHDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQLACC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQLACC.Designer.cs">
+      <DependentUpon>FQLACC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQLDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQLDV.Designer.cs">
+      <DependentUpon>FQLDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQLKH.Designer.cs">
+      <DependentUpon>FQLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQLKSSML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQLKSSML.Designer.cs">
+      <DependentUpon>FQLKSSML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQLNV.Designer.cs">
+      <DependentUpon>FQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQLROOM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQLROOM.Designer.cs">
+      <DependentUpon>FQLROOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQLtraphong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQLtraphong.Designer.cs">
+      <DependentUpon>FQLtraphong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRepass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRepass.Designer.cs">
+      <DependentUpon>FRepass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fthuephong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fthuephong.Designer.cs">
+      <DependentUpon>Fthuephong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTPHONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTPHONG.Designer.cs">
+      <DependentUpon>FTPHONG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Fdangkytk.resx">
+      <DependentUpon>Fdangkytk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDangN.resx">
+      <DependentUpon>FDangN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinHD.resx">
+      <DependentUpon>FinHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQHDV.resx">
+      <DependentUpon>FQHDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQLACC.resx">
+      <DependentUpon>FQLACC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQLDV.resx">
+      <DependentUpon>FQLDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQLKH.resx">
+      <DependentUpon>FQLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQLKSSML.resx">
+      <DependentUpon>FQLKSSML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQLNV.resx">
+      <DependentUpon>FQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQLROOM.resx">
+      <DependentUpon>FQLROOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQLtraphong.resx">
+      <DependentUpon>FQLtraphong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRepass.resx">
+      <DependentUpon>FRepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fthuephong.resx">
+      <DependentUpon>Fthuephong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTPHONG.resx">
+      <DependentUpon>FTPHONG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportInHD.rdlc" />
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DataSetinHD.xsc">
+      <DependentUpon>DataSetinHD.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetinHD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetinHD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetinHD.xss">
+      <DependentUpon>DataSetinHD.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\logokinhbac %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
